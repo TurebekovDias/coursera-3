@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    background-color: antiquewhite;
+}
+header {
+    background-color: rgb(192, 192, 192);
+    text-align: center;
+}
+nav {
+    background-color: rgb(212, 210, 187);
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+main {
+    background-color: antiquewhite;
+    font-size: 90%;
+    padding: 20px;
+}
+footer {
+    background-color: bisque;
+    padding: 10px;
+    text-align: center;
+}
+li {
+    display: inline-table;
+    width: 200px;
+}
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(180, 255, 221);
+}
+p {
+    line-height: 1.6; /* Исправлено с 10 на более подходящее значение */
+}
+img {
+    width: 500px;
+}
+
+/* Добавленные стили для интерактивной галереи */
+.preview {
+    width: 600px;
+    height: 400px;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 24px;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
